@@ -32,7 +32,6 @@ header a:hover {
   color: #ccc;
 }
 header #collapsibleNavbar {
-  display: inline-block;
   justify-content: end;
 }
 header .fa-bars {
@@ -145,12 +144,12 @@ h1 {
 }
 
 .contenedor-2 {
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #028090;
-  height: 300px;
   border: 2px solid #000;
   border-top: none;
   padding: 20px;
-  padding-bottom: none;
 }
 .contenedor-2 .presupuesto {
   display: flex;
@@ -251,7 +250,6 @@ h1 {
 .contenedor-2n .proveedores .iframe {
   width: 350px;
   height: 350px;
-  padding: 50px;
 }
 
 /* Fin Pagina Nosotros */
@@ -289,10 +287,13 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 200px;
+  padding-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contenedor-2s .article .div2 {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Fin Pagina Servicios */
@@ -586,11 +587,6 @@ h1 {
   color: #fff;
   font-family: "Farsan", cursive;
   font-size: 25px;
-}
-.footer .redes-footer h4 {
-  text-shadow: 0 0 5px #333, 0 0 5px #333;
-  padding-top: 20px;
-  text-align: center;
 }
 .footer .redes-footer a {
   color: #fff;
