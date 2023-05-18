@@ -23,25 +23,33 @@ header {
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
 }
-header span {
+header .contnav {
+  padding: 0px 20px;
+}
+@media only screen and (min-width: 992px) {
+  header .contnav {
+    padding: 10px 60px;
+  }
+}
+header .contnav span {
   font-size: 30px;
   color: #fff;
 }
-header a:hover {
+header .contnav #collapsibleNavbar {
+  justify-content: end;
+}
+header .contnav #collapsibleNavbar a:hover {
   color: #ccc;
   border: 2px solid #333;
   border-radius: 10px;
   box-shadow: inset 0 0 5px #fff;
   transform: translateY(-10px);
 }
-header #collapsibleNavbar {
-  justify-content: end;
-}
-header .fa-bars {
+header .contnav .fa-bars {
   color: #000;
   text-shadow: 0 0 5px #000;
 }
-header .nav-link {
+header .contnav .nav-link {
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
@@ -81,11 +89,17 @@ h1 {
   font-family: "Roboto", sans-serif;
   background-image: url(../multimedia/header.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 .banner .banner__nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .banner .banner__nosotros {
+    padding: 0px 60px;
+  }
 }
 .banner .banner__nosotros p {
   text-align: center;
@@ -93,6 +107,11 @@ h1 {
   font-size: 18px;
   color: #fff;
   text-shadow: 0 0 5px #333, 0 0 5px #333;
+}
+@media only screen and (min-width: 992px) {
+  .banner .banner__nosotros p {
+    text-align: left;
+  }
 }
 .banner .banner__nosotros a {
   padding: 20px 40px;
@@ -108,6 +127,11 @@ h1 {
   border-radius: 10px;
   color: #fff;
 }
+@media only screen and (min-width: 992px) {
+  .banner .banner__nosotros a {
+    margin-left: 10px;
+  }
+}
 .banner .banner__nosotros a:hover {
   background-color: rgba(128, 128, 128, 0.377);
 }
@@ -121,9 +145,8 @@ h1 {
   padding: 40px;
   height: -moz-fit-content;
   height: fit-content;
-  border: 2px solid #000;
   border-top: none;
-  background-color: #00A896;
+  background: radial-gradient(#02C39A, #05668D);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -153,8 +176,10 @@ h1 {
 .contenedor-2 {
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #00A896;
-  border: 2px solid #000;
+  background-image: url(../multimedia/presupuesto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   border-top: none;
   padding: 20px;
 }
@@ -169,11 +194,12 @@ h1 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  text-shadow: 0 0 2px #333;
+  text-shadow: 0 0 2px #fff;
   padding-bottom: 40px;
 }
 .contenedor-2 .presupuesto a {
-  border: 4mm ridge rgba(211, 220, 50, 0.6);
+  border: 4mm ridge rgba(92, 245, 212, 0.6);
+  border-radius: 10px;
   text-decoration: none;
   padding: 10px 20px;
   font-family: "Open Sans", sans-serif;
@@ -208,16 +234,13 @@ h1 {
 /* Fin Index */
 /* Inicio Pagina Nosotros */
 .contenedor-1n {
-  height: auto;
-  background-color: #00A896;
-  padding-left: 10%;
-  padding-right: 10%;
-  border: 2px solid #000;
-  border-top: none;
+  min-height: 400px;
+  background: radial-gradient(#02C39A, #05668D);
+  padding: 50px 10% 50px 10%;
 }
 .contenedor-1n p {
   text-align: center;
-  padding: 10px 10px 50px 10px;
+  padding: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
@@ -225,24 +248,15 @@ h1 {
   font-weight: bold;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 400px;
-  border: 5px solid #000;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .sec {
   background: radial-gradient(#02C39A, #05668D);
   width: 100%;
-  height: 400px;
-  padding: 20px 0px 20px 0px;
+  min-height: 400px;
+  padding: 40px 20px;
 }
 @media only screen and (min-width: 768px) {
   .sec {
-    padding: 20px 30% 20px 30%;
+    padding: 40px 20% 20px 20%;
   }
 }
 .sec .carousel-indicators li {
@@ -250,6 +264,14 @@ h1 {
   width: 20px;
   border-radius: 50%;
   border: 2px solid #000;
+}
+.sec .carousel-inner img {
+  width: 100%;
+  height: 400px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sec .carousel-control-prev-icon {
   position: relative;
@@ -263,31 +285,36 @@ h1 {
 .contenedor-2n {
   height: auto;
   background: radial-gradient(#02C39A, #05668D);
-  padding-left: 10%;
-  padding-right: 10%;
-  border: 2px solid #000;
-  border-top: none;
+  padding: 20px 10% 20px 10%;
 }
 .contenedor-2n h2 {
   text-align: center;
   font-size: 30px;
   color: #fff;
-  padding: 40px;
+  padding: 30px;
   text-shadow: 0 0 5px #333, 0 0 5px #333;
 }
 .contenedor-2n .proveedores {
   padding-bottom: 50px;
 }
+.contenedor-2n .proveedores .mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-2n .proveedores h3 {
+  text-align: center;
+}
 .contenedor-2n .proveedores .iframe {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   padding-bottom: 30px;
 }
 
 /* Fin Pagina Nosotros */
 /* Inicio Pagina Servicios */
 .contenedor-2s {
-  background-color: #00A896;
+  background: radial-gradient(#02C39A, #05668D);
 }
 .contenedor-2s h2 {
   font-family: "Roboto", sans-serif;
@@ -505,7 +532,7 @@ h1 {
 .main-trabajos {
   width: 100%;
   height: auto;
-  background-color: #028090;
+  background: radial-gradient(#02C39A, #05668D);
   border: 2px solid #000;
   border-top: none;
 }
@@ -591,8 +618,7 @@ h1 {
   height: auto;
   background-color: #05668D;
   background: linear-gradient(#05668D, #02C39A);
-  border: 2px solid #000;
-  border-top: none;
+  border-top: 2px solid #000;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -605,11 +631,11 @@ h1 {
   font-size: 22px;
   text-align: center;
   text-shadow: 0 0 5px #333, 0 0 5px #333;
-  color: #fff;
+  color: #333;
   padding-top: 30px;
 }
 .footer .logo-footer {
-  color: #fff;
+  color: #333;
   font-family: "Farsan", cursive;
   font-size: 22px;
   text-align: center;
@@ -628,12 +654,12 @@ h1 {
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #333;
   font-family: "Farsan", cursive;
   font-size: 25px;
 }
 .footer .redes-footer a {
-  color: #fff;
+  color: #333;
   font-size: 30px;
   letter-spacing: 15px;
   text-shadow: 0 0 5px #333, 0 0 5px #333;
