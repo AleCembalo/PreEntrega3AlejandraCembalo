@@ -452,7 +452,7 @@ h1{
 /* Inicio PAgina Contacto */
 
 .contenedor-1c{
-    background-image: url(../multimedia/pasto.jpg);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/pasto.jpg);
     background-attachment: fixed;
     flex-direction: column;
     align-items: center;
@@ -469,6 +469,7 @@ h1{
         
         & p{
             font-family: $font6;
+            color: $color5;
             font-weight: bolder;
             font-size: 20px;
             text-shadow:  0 0 5px $color7, 0 0 5px $color7;
@@ -530,10 +531,6 @@ h1{
             & input[type=text]{
                 @include input;
             }
-            
-            & input[type=contraseña]{
-                @include input;
-            }
 
             & input[type=email]{
                 @include input;
@@ -547,6 +544,7 @@ h1{
             }
 
             @mixin boton{
+                width: 130px;
                 background: none;
                 border: 3px solid $color6;
                 border-radius: 4px;
