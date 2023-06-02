@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Delicious+Handrawn&family=Farsan&family=Open+Sans:ital@1&family=Oswald&family=Roboto:ital@1&display=swap");
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Delicious Handrawn', cursive;
-font-family: 'Farsan', cursive;
+/* font-family: 'Farsan', cursive;
 font-family: 'Open Sans', sans-serif;
-font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif; */
 * {
   margin: 0;
@@ -73,7 +70,7 @@ header .contnav .navbar #collapsibleNavbar a:hover {
 h1 {
   font-size: 40px;
   text-align: center;
-  color: #fff;
+  color: #ccc;
   padding: 20px;
   padding-top: 40px;
   text-shadow: 0 0 5px #000, 0 0 5px #000;
@@ -190,7 +187,7 @@ h1 {
 .contenedor-2 {
   height: -moz-fit-content;
   height: fit-content;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.6), rgba(43, 42, 42, 0.6)), url(../multimedia/presupuesto.jpg);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.6), rgba(43, 42, 42, 0.6)), url(../multimedia/variedades/arboles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -235,7 +232,7 @@ h1 {
 }
 
 .contenedor-3 h2, .contenedor-3 .contenedor-2n .proveedores p, .contenedor-2n .proveedores .contenedor-3 p {
-  color: #000;
+  color: #333;
   font-size: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -321,11 +318,11 @@ h1 {
 .contenedor-2n {
   height: auto;
   background: radial-gradient(#333, #fff);
-  padding: 20px 10% 20px 10%;
+  padding: 20px 5% 20px 5%;
 }
 .contenedor-2n h2, .contenedor-2n .proveedores p {
   color: #000;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -853,7 +850,6 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  text-shadow: 0 0 5px #333;
   color: #000;
 }
 .footer .contacto-footer a {
@@ -864,7 +860,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-shadow: 0 0 5px #333;
 }
 .footer .logo-footer h3, .footer .logo-footer .contacto-footer a, .footer .contacto-footer .logo-footer a {
   color: #000;
@@ -886,7 +881,6 @@ h1 {
   color: #000;
   font-size: 30px;
   letter-spacing: 20px;
-  text-shadow: 0 0 5px #333;
 }
 .footer .redes-footer a .fa-facebook, .footer .redes-footer a .fa-twitter, .footer .redes-footer a .fa-instagram {
   width: 40px;
